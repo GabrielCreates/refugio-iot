@@ -1,0 +1,6 @@
+API de teste em http://127.0.0.1:8080/api/medicoes | sensor DHT22 | token não exigido | dados SÓ em memória (Ctrl+C para sair)
+[api] 201 medição 1: 27.0 °C / 60.0% alerta=false
+[api] 201 medição 2: 27.0 °C / 60.0% alerta=false
+[api] 201 medição 3: 27.0 °C / 60.0% alerta=false
+
+[api] encerrada; 3 medições descartadas (memória)

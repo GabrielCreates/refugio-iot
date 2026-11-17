@@ -1,0 +1,66 @@
+$ python gateway.py --simular --semente 2026 --intervalo 2 --max 60 --execucao E7-estabilidade-simulada
+[aviso] config.json não encontrado, usando config.example.json
+[gateway] execução E7-estabilidade-simulada | modo simulado | sensor DHT22 | API http://localhost:8080/api/medicoes | token não definido
+[ok] seq 1: 25.4 °C, 57.6% alerta=False -> HTTP 201
+[ok] seq 2: 30.1 °C, 73.7% alerta=False -> HTTP 201
+[ok] seq 3: 25.2 °C, 45.0% alerta=False -> HTTP 201
+[ok] seq 4: 31.2 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 5: 33.4 °C, 59.7% alerta=True -> HTTP 201
+[ok] seq 6: 32.8 °C, 69.6% alerta=True -> HTTP 201
+[ok] seq 7: 33.0 °C, 61.4% alerta=True -> HTTP 201
+[ok] seq 8: 26.9 °C, 62.6% alerta=False -> HTTP 201
+[ok] seq 9: 25.3 °C, 71.8% alerta=False -> HTTP 201
+[sensor] seq 10: falha_leitura_dht11 (nada enviado)
+[ok] seq 11: 29.4 °C, 71.7% alerta=False -> HTTP 201
+[ok] seq 12: 32.2 °C, 65.6% alerta=True -> HTTP 201
+[ok] seq 13: 26.5 °C, 46.3% alerta=False -> HTTP 201
+[ok] seq 14: 35.8 °C, 76.8% alerta=True -> HTTP 201
+[ok] seq 15: 33.7 °C, 80.0% alerta=True -> HTTP 201
+[ok] seq 16: 30.2 °C, 38.4% alerta=False -> HTTP 201
+[ok] seq 17: 28.1 °C, 60.1% alerta=False -> HTTP 201
+[ok] seq 18: 27.5 °C, 55.6% alerta=False -> HTTP 201
+[ok] seq 19: 34.5 °C, 66.7% alerta=True -> HTTP 201
+[sensor] seq 20: falha_leitura_dht11 (nada enviado)
+[ok] seq 21: 30.9 °C, 36.1% alerta=False -> HTTP 201
+[ok] seq 22: 32.5 °C, 51.4% alerta=True -> HTTP 201
+[ok] seq 23: 29.1 °C, 52.9% alerta=False -> HTTP 201
+[ok] seq 24: 31.0 °C, 57.4% alerta=False -> HTTP 201
+[ok] seq 25: 25.4 °C, 57.8% alerta=False -> HTTP 201
+[ok] seq 26: 33.0 °C, 62.0% alerta=True -> HTTP 201
+[ok] seq 27: 29.9 °C, 76.3% alerta=False -> HTTP 201
+[ok] seq 28: 27.1 °C, 53.9% alerta=False -> HTTP 201
+[ok] seq 29: 35.1 °C, 56.6% alerta=True -> HTTP 201
+[sensor] seq 30: falha_leitura_dht11 (nada enviado)
+[ok] seq 31: 30.2 °C, 36.1% alerta=False -> HTTP 201
+[ok] seq 32: 26.7 °C, 40.8% alerta=False -> HTTP 201
+[ok] seq 33: 24.6 °C, 66.7% alerta=False -> HTTP 201
+[ok] seq 34: 34.6 °C, 39.6% alerta=True -> HTTP 201
+[ok] seq 35: 31.5 °C, 56.2% alerta=False -> HTTP 201
+[ok] seq 36: 29.8 °C, 45.3% alerta=False -> HTTP 201
+[ok] seq 37: 34.6 °C, 63.2% alerta=True -> HTTP 201
+[ok] seq 38: 29.5 °C, 56.1% alerta=False -> HTTP 201
+[ok] seq 39: 35.2 °C, 79.4% alerta=True -> HTTP 201
+[sensor] seq 40: falha_leitura_dht11 (nada enviado)
+[ok] seq 41: 30.5 °C, 60.2% alerta=False -> HTTP 201
+[ok] seq 42: 32.0 °C, 48.8% alerta=True -> HTTP 201
+[ok] seq 43: 33.6 °C, 57.6% alerta=True -> HTTP 201
+[ok] seq 44: 29.7 °C, 74.8% alerta=False -> HTTP 201
+[ok] seq 45: 29.2 °C, 48.2% alerta=False -> HTTP 201
+[ok] seq 46: 27.2 °C, 36.5% alerta=False -> HTTP 201
+[ok] seq 47: 31.9 °C, 61.9% alerta=False -> HTTP 201
+[ok] seq 48: 29.5 °C, 58.5% alerta=False -> HTTP 201
+[ok] seq 49: 29.9 °C, 76.5% alerta=False -> HTTP 201
+[sensor] seq 50: falha_leitura_dht11 (nada enviado)
+[ok] seq 51: 27.1 °C, 56.9% alerta=False -> HTTP 201
+[ok] seq 52: 30.1 °C, 72.2% alerta=False -> HTTP 201
+[ok] seq 53: 33.7 °C, 60.1% alerta=True -> HTTP 201
+[ok] seq 54: 34.9 °C, 72.4% alerta=True -> HTTP 201
+[ok] seq 55: 27.8 °C, 76.3% alerta=False -> HTTP 201
+[ok] seq 56: 25.2 °C, 66.0% alerta=False -> HTTP 201
+[ok] seq 57: 33.4 °C, 58.2% alerta=True -> HTTP 201
+[ok] seq 58: 29.4 °C, 78.4% alerta=False -> HTTP 201
+[ok] seq 59: 35.6 °C, 72.9% alerta=True -> HTTP 201
+[sensor] seq 60: falha_leitura_dht11 (nada enviado)
+[gateway] resumo E7-estabilidade-simulada: enviado=54, falha_sensor=6
+[gateway] log: ../evidencias/execucao_2026-11-17/medicoes_log.csv
+{"status": "ok", "armazenamento": "memoria", "sensor": "DHT22", "medicoes": 54}

@@ -1,0 +1,20 @@
+# API de teste DESLIGADA (nenhum processo na porta 8080)
+$ python gateway.py --arquivo <3 primeiras linhas de saida_wokwi.txt> --execucao E4-api-desligada
+[aviso] config.json não encontrado, usando config.example.json
+[gateway] execução E4-api-desligada | modo arquivo | sensor DHT22 | API http://localhost:8080/api/medicoes | token não definido
+[arduino] status: iniciado
+[http] tentativa 1/3 falhou: sem_conexao
+[http] tentativa 2/3 falhou: sem_conexao
+[http] tentativa 3/3 falhou: sem_conexao
+[falha_envio] seq 1 não entregue: sem_conexao
+[http] tentativa 1/3 falhou: sem_conexao
+[http] tentativa 2/3 falhou: sem_conexao
+[http] tentativa 3/3 falhou: sem_conexao
+[falha_envio] seq 2 não entregue: sem_conexao
+[http] tentativa 1/3 falhou: sem_conexao
+[http] tentativa 2/3 falhou: sem_conexao
+[http] tentativa 3/3 falhou: sem_conexao
+[falha_envio] seq 3 não entregue: sem_conexao
+[gateway] resumo E4-api-desligada: falha_envio=3, status=1
+[gateway] log: ../evidencias/execucao_2026-11-17/medicoes_log.csv
+# duração total medida: 8.2 s

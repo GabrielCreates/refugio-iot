@@ -1,0 +1,45 @@
+$ python gateway.py --arquivo ../evidencias/wokwi_2026-11-13/saida_wokwi.txt --execucao E1-reproducao-wokwi --log ../evidencias/execucao_2026-11-17/medicoes_log.csv
+[aviso] config.json não encontrado, usando config.example.json
+[gateway] execução E1-reproducao-wokwi | modo arquivo | sensor DHT22 | API http://localhost:8080/api/medicoes | token não definido
+[arduino] status: iniciado
+[ok] seq 1: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 2: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 3: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 4: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 5: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 6: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 7: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 8: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 9: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 10: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 11: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 12: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 13: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 14: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 15: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 16: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 17: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 18: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 19: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 20: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 21: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 22: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 23: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 24: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 25: 35.0 °C, 60.0% alerta=True -> HTTP 201
+[ok] seq 26: 35.0 °C, 60.0% alerta=True -> HTTP 201
+[ok] seq 27: 35.0 °C, 60.0% alerta=True -> HTTP 201
+[ok] seq 28: 35.0 °C, 60.0% alerta=True -> HTTP 201
+[ok] seq 29: 35.0 °C, 60.0% alerta=True -> HTTP 201
+[ok] seq 30: 35.0 °C, 60.0% alerta=True -> HTTP 201
+[ok] seq 31: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 32: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 33: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 34: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 35: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 36: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 37: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 38: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 39: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[gateway] resumo E1-reproducao-wokwi: enviado=39, status=1
+[gateway] log: ../evidencias/execucao_2026-11-17/medicoes_log.csv

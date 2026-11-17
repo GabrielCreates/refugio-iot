@@ -1,0 +1,22 @@
+$ python gateway.py --arquivo ../evidencias/execucao_2026-11-17/entradas_teste_gateway.txt --intervalo 0.2 --execucao E2-entradas-de-teste --log ../evidencias/execucao_2026-11-17/medicoes_log.csv
+[aviso] config.json não encontrado, usando config.example.json
+[gateway] execução E2-entradas-de-teste | modo arquivo | sensor DHT22 | API http://localhost:8080/api/medicoes | token não definido
+[arduino] status: iniciado
+[ok] seq 1: 27.0 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 2: 31.9 °C, 60.0% alerta=False -> HTTP 201
+[ok] seq 3: 32.0 °C, 60.0% alerta=True -> HTTP 201
+[ok] seq 4: 32.1 °C, 60.0% alerta=True -> HTTP 201
+[ok] seq 5: 25.0 °C, 60.0% alerta=False -> HTTP 201
+[sensor] seq 6: falha_leitura_dht11 (nada enviado)
+[linha_invalida] não é JSON: Simulation started
+[linha_invalida] não é JSON: {"seq":7,"temperatura":27.0
+[formato_invalido] JSON não é um objeto: [27.0, 60.0]
+[formato_invalido] campos ausentes: temperatura: {"seq":8,"umidade":60.0,"alerta":false}
+[formato_invalido] temperatura e umidade devem ser números: {"seq":9,"temperatura":"27.0","umidade":60.0,"alerta":false}
+[formato_invalido] alerta deve ser true ou false: {"seq":10,"temperatura":27.0,"umidade":60.0,"alerta":"false"}
+[fora_da_faixa] umidade 150.0 fora da faixa do DHT22 (0.0 a 100.0 %UR): {"seq":11,"temperatura":27.0,"umidade":150.0,"alerta":false}
+[fora_da_faixa] temperatura 85.0 fora da faixa do DHT22 (-40.0 a 80.0 °C): {"seq":12,"temperatura":85.0,"umidade":60.0,"alerta":true}
+[fora_da_faixa] alerta=false inconsistente com 32.0 °C (limiar 32.0 °C): {"seq":13,"temperatura":32.0,"umidade":60.0,"alerta":false}
+[ok] seq 14: 28.0 °C, 55.0% alerta=False -> HTTP 201
+[gateway] resumo E2-entradas-de-teste: enviado=6, falha_sensor=1, fora_da_faixa=3, formato_invalido=4, linha_invalida=2, status=1
+[gateway] log: ../evidencias/execucao_2026-11-17/medicoes_log.csv

@@ -1,0 +1,25 @@
+# API de teste iniciada com REFUGIO_API_TOKEN=token-de-teste (o token só aparece aqui porque é um valor fictício de teste)
+$ POST válido sem token
+{"erro": "token ausente ou inválido"}  -> HTTP 401
+
+$ POST válido com token
+{"id": 1}  -> HTTP 201
+
+$ POST umidade 150 (fora da faixa)
+{"erro": "umidade 150 fora da faixa do DHT22 (0.0 a 100.0 %UR)"}  -> HTTP 422
+
+$ POST alerta inconsistente (32 °C e alerta=false)
+{"erro": "alerta=false inconsistente com 32.0 °C (limiar 32.0 °C)"}  -> HTTP 422
+
+$ POST campos ausentes
+{"erro": "campos ausentes: pontoId, umidade, alerta, dataHora, origem"}  -> HTTP 400
+
+$ POST tipo incorreto (temperatura texto)
+{"erro": "temperatura e umidade devem ser números"}  -> HTTP 400
+
+$ POST JSON malformado
+{"erro": "JSON inválido"}  -> HTTP 400
+
+$ GET lista (só a medição aceita deve aparecer)
+[{"pontoId": 1, "temperatura": 27.0, "umidade": 60.0, "alerta": false, "dataHora": "2026-11-17T18:00:00+00:00", "origem": "REFUGIO-UNO-01", "id": 1, "recebidoEm": "2026-11-17T18:16:17.369+00:00"}]  -> HTTP 200
+

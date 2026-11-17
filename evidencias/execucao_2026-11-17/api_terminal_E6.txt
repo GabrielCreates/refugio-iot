@@ -1,0 +1,8 @@
+API de teste em http://127.0.0.1:8080/api/medicoes | sensor DHT22 | token exigido | dados SÓ em memória (Ctrl+C para sair)
+[api] 201 medição 1: 27.0 °C / 60.0% alerta=false
+[api] HTTP 422: umidade 150 fora da faixa do DHT22 (0.0 a 100.0 %UR)
+[api] HTTP 422: alerta=false inconsistente com 32.0 °C (limiar 32.0 °C)
+[api] HTTP 400: campos ausentes: pontoId, umidade, alerta, dataHora, origem
+[api] HTTP 400: temperatura e umidade devem ser números
+
+[api] encerrada; 1 medições descartadas (memória)

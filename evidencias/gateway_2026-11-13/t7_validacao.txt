@@ -1,0 +1,4 @@
+### T7 - Validação de dado inválido (umidade 150)
+$ POST /api/medicoes {"umidade":150,...}
+HTTP 422 {"erro": "valor fora da faixa do sensor"}
+HTTP 400 {"erro": "campos ausentes: ['alerta', 'dataHora', 'origem', 'pontoId', 'umidade']"}

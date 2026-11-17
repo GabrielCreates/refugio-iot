@@ -1,0 +1,48 @@
+$ curl -s http://127.0.0.1:8080/api/saude
+{"status": "ok", "armazenamento": "memoria", "sensor": "DHT22", "medicoes": 45}
+
+$ curl -s "http://127.0.0.1:8080/api/medicoes?limite=3"
+[
+    {
+        "pontoId": 1,
+        "temperatura": 32.1,
+        "umidade": 60.0,
+        "alerta": true,
+        "dataHora": "2026-11-17T18:15:42.570+00:00",
+        "origem": "REFUGIO-UNO-01",
+        "id": 43,
+        "recebidoEm": "2026-11-17T18:15:42.572+00:00"
+    },
+    {
+        "pontoId": 1,
+        "temperatura": 25.0,
+        "umidade": 60.0,
+        "alerta": false,
+        "dataHora": "2026-11-17T18:15:42.773+00:00",
+        "origem": "REFUGIO-UNO-01",
+        "id": 44,
+        "recebidoEm": "2026-11-17T18:15:42.775+00:00"
+    },
+    {
+        "pontoId": 1,
+        "temperatura": 28.0,
+        "umidade": 55.0,
+        "alerta": false,
+        "dataHora": "2026-11-17T18:15:44.980+00:00",
+        "origem": "REFUGIO-UNO-01",
+        "id": 45,
+        "recebidoEm": "2026-11-17T18:15:44.982+00:00"
+    }
+]
+
+$ curl -s http://127.0.0.1:8080/api/medicoes/ultima
+{
+    "pontoId": 1,
+    "temperatura": 28.0,
+    "umidade": 55.0,
+    "alerta": false,
+    "dataHora": "2026-11-17T18:15:44.980+00:00",
+    "origem": "REFUGIO-UNO-01",
+    "id": 45,
+    "recebidoEm": "2026-11-17T18:15:44.982+00:00"
+}

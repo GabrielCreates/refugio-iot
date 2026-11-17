@@ -1,0 +1,17 @@
+{"status":"iniciado","dispositivo":"REFUGIO-UNO-01"}
+{"seq":1,"temperatura":27.0,"umidade":60.0,"alerta":false}
+{"seq":2,"temperatura":31.9,"umidade":60.0,"alerta":false}
+{"seq":3,"temperatura":32.0,"umidade":60.0,"alerta":true}
+{"seq":4,"temperatura":32.1,"umidade":60.0,"alerta":true}
+{"seq":5,"temperatura":25.0,"umidade":60.0,"alerta":false}
+{"seq":6,"erro":"falha_leitura_dht11"}
+Simulation started
+{"seq":7,"temperatura":27.0
+[27.0, 60.0]
+{"seq":8,"umidade":60.0,"alerta":false}
+{"seq":9,"temperatura":"27.0","umidade":60.0,"alerta":false}
+{"seq":10,"temperatura":27.0,"umidade":60.0,"alerta":"false"}
+{"seq":11,"temperatura":27.0,"umidade":150.0,"alerta":false}
+{"seq":12,"temperatura":85.0,"umidade":60.0,"alerta":true}
+{"seq":13,"temperatura":32.0,"umidade":60.0,"alerta":false}
+{"seq":14,"temperatura":28.0,"umidade":55.0,"alerta":false}

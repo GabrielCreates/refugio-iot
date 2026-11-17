@@ -1,0 +1,111 @@
+### T5 - Envio das leituras do Wokwi para a API
+$ python gateway.py --arquivo ../evidencias/saida_wokwi.txt
+[aviso] config.json não encontrado, usando config.example.json
+[arduino] {'status': 'iniciado', 'dispositivo': 'REFUGIO-UNO-01'}
+[ok] seq 1: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 2: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 3: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 4: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 5: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 6: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 7: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 8: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 9: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 10: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 11: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 12: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 13: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 14: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 15: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 16: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 17: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 18: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 19: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 20: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 21: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 22: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 23: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 24: 27.0 °C, 60.0% -> HTTP 201
+[ok] seq 25: 35.0 °C, 60.0% -> HTTP 201
+[ok] seq 26: 35.0 °C, 60.0% -> HTTP 201
+[ok] seq 27: 35.0 °C, 60.0% -> HTTP 201
+[ok] seq 28: 35.0 °C, 60.0% -> HTTP 201
+[ok] seq 29: 35.0 °C, 60.0% -> HTTP 201
+[ok] seq 30: 35.0 °C, 60.0% -> HTTP 201
+[ok] seq 31: 25.0 °C, 60.0% -> HTTP 201
+[ok] seq 32: 25.0 °C, 60.0% -> HTTP 201
+[ok] seq 33: 25.0 °C, 60.0% -> HTTP 201
+[ok] seq 34: 25.0 °C, 60.0% -> HTTP 201
+[ok] seq 35: 25.0 °C, 60.0% -> HTTP 201
+[ok] seq 36: 25.0 °C, 60.0% -> HTTP 201
+[ok] seq 37: 25.0 °C, 60.0% -> HTTP 201
+[ok] seq 38: 25.0 °C, 60.0% -> HTTP 201
+[ok] seq 39: 25.0 °C, 60.0% -> HTTP 201
+--- Terminal da API (mock_api.py) ---
+Mock da API em http://localhost:8080/api/medicoes (Ctrl+C para sair)
+[api] medição 1: 27.0 °C / 60.0%
+[api] medição 2: 27.0 °C / 60.0%
+[api] medição 3: 27.0 °C / 60.0%
+[api] medição 4: 27.0 °C / 60.0%
+[api] medição 5: 27.0 °C / 60.0%
+[api] medição 6: 27.0 °C / 60.0%
+[api] medição 7: 27.0 °C / 60.0%
+[api] medição 8: 27.0 °C / 60.0%
+[api] medição 9: 27.0 °C / 60.0%
+[api] medição 10: 27.0 °C / 60.0%
+[api] medição 11: 27.0 °C / 60.0%
+[api] medição 12: 27.0 °C / 60.0%
+[api] medição 13: 27.0 °C / 60.0%
+[api] medição 14: 27.0 °C / 60.0%
+[api] medição 15: 27.0 °C / 60.0%
+[api] medição 16: 27.0 °C / 60.0%
+[api] medição 17: 27.0 °C / 60.0%
+[api] medição 18: 27.0 °C / 60.0%
+[api] medição 19: 27.0 °C / 60.0%
+[api] medição 20: 27.0 °C / 60.0%
+[api] medição 21: 27.0 °C / 60.0%
+[api] medição 22: 27.0 °C / 60.0%
+[api] medição 23: 27.0 °C / 60.0%
+[api] medição 24: 27.0 °C / 60.0%
+[api] medição 25: 35.0 °C / 60.0%
+[api] medição 26: 35.0 °C / 60.0%
+[api] medição 27: 35.0 °C / 60.0%
+[api] medição 28: 35.0 °C / 60.0%
+[api] medição 29: 35.0 °C / 60.0%
+[api] medição 30: 35.0 °C / 60.0%
+[api] medição 31: 25.0 °C / 60.0%
+[api] medição 32: 25.0 °C / 60.0%
+[api] medição 33: 25.0 °C / 60.0%
+[api] medição 34: 25.0 °C / 60.0%
+[api] medição 35: 25.0 °C / 60.0%
+[api] medição 36: 25.0 °C / 60.0%
+[api] medição 37: 25.0 °C / 60.0%
+[api] medição 38: 25.0 °C / 60.0%
+[api] medição 39: 25.0 °C / 60.0%
+--- GET /api/medicoes (últimas 3) ---
+[
+ {
+  "pontoId": 1,
+  "temperatura": 25.0,
+  "umidade": 60.0,
+  "alerta": false,
+  "dataHora": "2026-11-13T05:35:27+00:00",
+  "origem": "REFUGIO-UNO-01"
+ },
+ {
+  "pontoId": 1,
+  "temperatura": 25.0,
+  "umidade": 60.0,
+  "alerta": false,
+  "dataHora": "2026-11-13T05:35:27+00:00",
+  "origem": "REFUGIO-UNO-01"
+ },
+ {
+  "pontoId": 1,
+  "temperatura": 25.0,
+  "umidade": 60.0,
+  "alerta": false,
+  "dataHora": "2026-11-13T05:35:28+00:00",
+  "origem": "REFUGIO-UNO-01"
+ }
+]

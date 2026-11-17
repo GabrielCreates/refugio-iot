@@ -1,0 +1,11 @@
+### T6 - API fora do ar (mock_api parado)
+$ python gateway.py --arquivo leituras.txt   (API desligada)
+[aviso] config.json não encontrado, usando config.example.json
+[http] tentativa 1 falhou: ConnectionError
+[http] tentativa 2 falhou: ConnectionError
+[http] tentativa 3 falhou: ConnectionError
+[falha] seq 40: 25.0 °C, 60.0% -> HTTP sem_conexao
+[http] tentativa 1 falhou: ConnectionError
+[http] tentativa 2 falhou: ConnectionError
+[http] tentativa 3 falhou: ConnectionError
+[falha] seq 41: 25.0 °C, 60.0% -> HTTP sem_conexao
