@@ -1,0 +1,16 @@
+# W5 (32,0 °C) - diagram.json com "temperature": "32"
+{"status":"iniciado","dispositivo":"REFUGIO-UNO-01"}
+{"seq":1,"temperatura":32.0,"umidade":60.0,"alerta":true}
+{"seq":2,"temperatura":32.0,"umidade":60.0,"alerta":true}
+
+# W5 (31,9 °C) - diagram.json com "temperature": "31.9"
+{"status":"iniciado","dispositivo":"REFUGIO-UNO-01"}
+{"seq":1,"temperatura":31.9,"umidade":60.0,"alerta":false}
+
+# W4 (sensor desconectado) - conexão dht1:SDA -> uno:2 removida do diagram.json
+{"status":"iniciado","dispositivo":"REFUGIO-UNO-01"}
+{"seq":1,"erro":"falha_leitura_dht11"}
+{"seq":2,"erro":"falha_leitura_dht11"}
+{"seq":3,"erro":"falha_leitura_dht11"}
+{"seq":4,"erro":"falha_leitura_dht11"}
+{"seq":5,"erro":"falha_leitura_dht11"}

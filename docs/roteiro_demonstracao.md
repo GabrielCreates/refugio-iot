@@ -21,11 +21,11 @@ Tudo neste roteiro funciona hoje. Onde algo é proposta, a fala diz isso.
 | 6 | 1 min | Consulta das medições | Navegador: `http://localhost:8080/api/medicoes?limite=5` | A API de teste guarda só em memória. Na proposta, seria a API Java com PostgreSQL. |
 | 7 | 1 min | Entradas inválidas | `py gateway.py --arquivo ..\evidencias\execucao_2026-11-17\entradas_teste_gateway.txt --intervalo 0.3` | Texto que não é JSON, tipos errados, umidade 150, alerta incoerente: tudo é recusado com motivo e nada é enviado. |
 | 8 | 1 min | Rede | Os dois diagramas | Demonstrado: localhost, tudo no mesmo PC. Proposto: USB/Serial → PC gateway → roteador → Internet (HTTPS) → API na Azure → PostgreSQL; o app consulta a API. O Uno não tem Wi-Fi, por isso precisa do gateway. |
-| 9 | 1 min | Testes, resultados e limitações | `docs/testes.md` | 18 testes automatizados, 11 verificações do firmware e 7 cenários executados. Pendentes: 32 °C exatos no Wokwi e hardware físico. Sem reenvio de leituras perdidas. |
+| 9 | 1 min | Testes, resultados e limitações | `docs/testes.md` | 18 testes automatizados, 11 verificações do firmware e 7 cenários executados. No Wokwi, 31,9 °C apaga e 32,0 °C acende o LED. Sem reenvio de leituras perdidas. |
 
 ## Plano B (se algo falhar ao vivo)
 
-- **Wokwi fora do ar:** mostrar os prints em `evidencias/wokwi_2026-11-13/`.
+- **Wokwi fora do ar:** mostrar os prints em `evidencias/wokwi_2026-11-17/`.
 - **Porta 8080 ocupada:** `py mock_api.py --porta 8081` e ajustar `api_url` no `config.json`.
 - **Para mostrar a API caindo:** encerrar o Terminal 1 (Ctrl+C) e rodar o gateway de novo. Ele faz 3 tentativas e registra `falha_envio`.
 
