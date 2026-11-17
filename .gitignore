@@ -1,0 +1,11 @@
+# configuração local (copie de gateway/config.example.json)
+gateway/config.json
+.env
+# logs gerados nas suas execuções (as evidências oficiais ficam em evidencias/)
+gateway/logs/
+# Python
+__pycache__/
+*.pyc
+# binário do teste de lógica do firmware
+testes/firmware_host/teste_firmware
+testes/firmware_host/*.exe
