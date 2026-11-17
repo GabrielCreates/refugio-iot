@@ -1,0 +1,12 @@
+{
+  "porta_serial": "COM3",
+  "baud": 9600,
+  "api_url": "http://localhost:8080/api/medicoes",
+  "ponto_id": 1,
+  "dispositivo": "REFUGIO-UNO-01",
+  "sensor": "DHT22",
+  "limiar_alerta": 32.0,
+  "timeout_s": 5,
+  "tentativas": 3,
+  "intervalo_reproducao_s": 0.5
+}
