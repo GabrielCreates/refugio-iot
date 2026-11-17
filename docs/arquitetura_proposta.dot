@@ -1,0 +1,17 @@
+digraph G {
+  rankdir=LR; dpi=150; bgcolor="white"; nodesep=0.4; ranksep=0.5;
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=12, color="#666666", fillcolor="#f2f2f2"];
+  edge [fontname="Arial", fontsize=10, color="#555555"];
+  labelloc="t"; fontname="Arial"; fontsize=16; label="REFÚGIO - Arquitetura proposta\n ";
+  subgraph cluster_p { label="Ponto de apoio"; fontsize=12; style="rounded"; color="#999999";
+    S [label="DHT11"]; A [label="Arduino Uno"]; L [label="LED"];
+    S -> A; A -> L;
+  }
+  G [label="PC gateway"]; R [label="Roteador"]; I [label="Internet", shape=ellipse];
+  subgraph cluster_n { label="Azure"; fontsize=12; style="rounded"; color="#999999";
+    API [label="API Java"]; DB [label="PostgreSQL", shape=cylinder];
+    API -> DB;
+  }
+  APP [label="App Flutter"];
+  A -> G [label=" USB"]; G -> R [label=" Wi-Fi"]; R -> I; I -> API [label=" HTTPS"]; APP -> I [label=" HTTPS"];
+}

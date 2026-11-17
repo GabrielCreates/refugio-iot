@@ -1,0 +1,18 @@
+digraph G {
+  rankdir=TB; dpi=150; bgcolor="white"; nodesep=0.5; ranksep=0.45;
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=12, color="#666666", fillcolor="#f2f2f2"];
+  edge [fontname="Arial", fontsize=10, color="#555555"];
+  labelloc="t"; fontname="Arial"; fontsize=16; label="REFÚGIO - Arquitetura do protótipo\n ";
+  subgraph cluster_w { label="Wokwi"; fontsize=12; style="rounded"; color="#999999";
+    S [label="DHT22"]; A [label="Arduino Uno"]; L [label="LED"]; M [label="Serial Monitor"];
+    S -> A [label=" D2"]; A -> L [label=" D8"]; A -> M [label=" Serial 9600"];
+  }
+  F [label="saida_wokwi.txt", shape=note];
+  M -> F [style=dashed, label=" exportado"];
+  subgraph cluster_pc { label="Computador (localhost)"; fontsize=12; style="rounded"; color="#999999";
+    G [label="gateway.py"]; CSV [label="medicoes_log.csv", shape=note];
+    API [label="mock_api.py"]; C [label="curl / navegador"];
+    G -> CSV; G -> API [label=" HTTP POST"]; C -> API [label=" HTTP GET"];
+  }
+  F -> G;
+}
